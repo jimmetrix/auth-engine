@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: safe
+      POSTGRES_PASSWORD: safe
+      POSTGRES_DB: safe_db
+    ports: ["5432:5432"]
+  redis:
+    image: redis:7
+    ports: ["6379:6379"]
